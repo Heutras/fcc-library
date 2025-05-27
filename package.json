@@ -1,10 +1,11 @@
 {
 	"name": "fcc-library",
 	"version": "1.0.0",
-	"description": "boilerplate",
+	"description": "Personal Library project for FreeCodeCamp",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "node server.js",
+		"test": "NODE_ENV=test mocha tests/ --timeout 5000"
 	},
 	"dependencies": {
 		"body-parser": "^1.15.2",
@@ -14,7 +15,7 @@
 		"dotenv": "^8.2.0",
 		"express": "^4.14.0",
 		"mocha": "^3.2.0",
-		"zombie": "^5.0.5"
+		"mongoose": "^8.15.1"
 	},
 	"repository": {
 		"type": "git",
@@ -22,8 +23,9 @@
 	},
 	"keywords": [
 		"node",
-		"hyperdev",
-		"express"
+		"express",
+		"mongodb",
+		"mongoose"
 	],
 	"license": "MIT"
 }
